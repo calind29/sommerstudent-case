@@ -3,27 +3,6 @@
   justify-content: center;
 }
 
-.Card {
-  font-weight: 100;
-  font-family: Arial, Helvetica, sans-serif;
-  width: 400px;
-  height: 600px;
-  display: flex;
-  justify-content: center;
-  border-style: solid;
-  border-width: 30px;
-  border-radius: 25px;
-  border-color: rgb(206, 206, 14);
-  background-color: blue;
-  box-shadow: 0 4px 6px 0 rgba(0,0,0,0.7);
-}
-
-.Card .CardContent {
-  list-style-type: none;
-  padding: 0; 
-  margin: 0;
-}
-
 .infoContainer {
   display: flex;
   justify-content: center;
@@ -32,9 +11,13 @@
   background: radial-gradient(rgb(7, 247, 107), rgb(6, 107, 80));
   border-style: solid;
   border-width: 5px;
-  border-radius: 25px;
   border-color: rgb(124, 124, 121);
-  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
-
+.appRoot .textField {
+  margin-top: 700px;
+  display: flex;
+  justify-content: center;
+}
