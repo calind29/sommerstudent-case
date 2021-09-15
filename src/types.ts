@@ -48,8 +48,3 @@ export interface Pokemon {
   types: TypeOfPokemon[];
   weight: number;
 }
-
-export interface PokemonAbility {
-  flavor_text: string;
-
-}
