@@ -1,0 +1,71 @@
+.Card {
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 400px;
+    height: 600px;
+    background-color: transparent;
+    perspective: 1000px;
+    border-radius: 50px;
+}
+
+.FlipCard {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.Card:hover .FlipCard {
+    transform: rotateY(180deg);
+}
+
+.CardFront, .CardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.CardContent {
+    list-style-type: none;
+    padding: 0; 
+    margin: 0;
+}
+
+.CardBack {
+    width: 400px;
+    height: 600px;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 50px;
+    box-shadow: 0 4px 6px 0 rgba(0,0,0,0.7);
+}
+
+.Image {
+    width: 400px;
+    height: 600px;
+}
+
+.CardFront {
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    border-width: 30px;
+    border-radius: 50px;
+    border-color: rgb(206, 206, 14);
+    background-color: blue;
+    box-shadow: 0 4px 6px 0 rgba(0,0,0,0.7);
+}
+
+.generalInfo {
+    background-color: silver;
+    border-style: solid;
+    border-top-width: 0px;
+    border-color: rgb(124, 124, 121);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
