@@ -5,7 +5,7 @@ interface Props {
   pokemon?: Pokemon;
 }
 
-const Abilities: React.FunctionComponent<Props> = ({ pokemon }) => {
+const Moves: React.FunctionComponent<Props> = ({ pokemon }) => {
     const moveList = pokemon?.moves.map(move => move.move.name);
           
     return(
@@ -18,4 +18,4 @@ const Abilities: React.FunctionComponent<Props> = ({ pokemon }) => {
 
     )
 }
-export default Abilities;
+export default Moves;

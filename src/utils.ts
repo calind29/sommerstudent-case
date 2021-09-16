@@ -12,4 +12,3 @@ export const fetchPokemon = async (pokemonName: string) =>
       );
     }
   );
-

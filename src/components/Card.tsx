@@ -1,7 +1,7 @@
 import React from 'react';
 import { Pokemon } from '../types';
 import InfoContainer from './InfoContainer';
-import Abilities from './Abilities'
+import Moves from './Moves'
 import Backside from './cardBack.png';
 
 import "../Card.css"
@@ -23,8 +23,8 @@ const Card: React.FunctionComponent<Props> = ({ pokemon }) => {
                     <li className="name"><h1>{pokemon?.name}</h1></li>
                     <li className="picture"><InfoContainer pokemon={pokemon} /></li>
                     <li className="generalInfo">NO: {pokemon?.id} HT: {pokemon?.height} WT: {pokemon?.weight}</li>
-                    <li className="abilitiesHeader"><h2>Abilities:</h2></li>
-                    <li className="abilities"><Abilities pokemon={pokemon}/></li>
+                    <li className="movesHeader"><h2>Moves:</h2></li>
+                    <li className="moves"><Moves pokemon={pokemon}/></li>
                 </ul>
             </div>
         </div>
